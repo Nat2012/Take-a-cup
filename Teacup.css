@@ -13,10 +13,214 @@ body{
     background: #607d8b;
 }
 
+:root{
+    --widthbreadouter: 200px;
+    --widthbreadinner: 190px;
+    --rotate: 270deg;
+    --breadbottom: 60px;
+    --randomval1: 20px;
+    --randomval2: 200px;
+}
+
+
+/* Doesnt do anything might continue later */
+
+/* circle::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    top: 10px;
+    left: 55px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f6f6f6, #d9d9d9);
+}
+
+circle::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent,  transparent);
+} */
+
+
 
 .container{
     position: relative;
     top: 50px;
+    right: 100px;
+} 
+
+.container2{
+    position: relative;
+    top: 90px;
+    left: 300px;
+}
+
+.container3{
+    position: relative;
+    background-color: plum;
+    bottom: 90px;
+    right: 900px;
+}
+
+.base{
+    position: absolute;
+    width: 130px;
+    height: 230px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    transform: rotateX(70deg);
+    border-radius: 50%;
+    top: -20px;
+    left: -25px;
+}
+
+
+.stem{
+    position: absolute;
+    
+    width: 100px;
+    height: 150px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    top: -30px;
+    left: -10px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+}
+
+.eggtop{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9); 
+    top: -30px;
+    left: -1px;
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+
+.egg{
+    position: relative;
+    top: -30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(215, 147, 90);
+    z-index: 1;
+    
+}
+
+
+
+.bread{
+    position: absolute;
+    top: 60px;
+    left: -10px;
+}
+
+.breadouter{
+    position: absolute;
+    width: var(--widthbreadouter);
+    height: 100px;
+    border-bottom-right-radius: 45%;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 20%;
+    background-color: rgb(177, 101, 19);
+    bottom: var(--breadbottom);
+    right: -90px;
+    z-index: 1;
+    transform: rotateZ(var(--rotate));
+}
+
+.breadouter2{
+    position: absolute;
+    width: var(--widthbreadouter);
+    height: 100px;
+    border-bottom-right-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 20%;
+    background-color: rgb(177, 101, 19);
+    bottom: var(--breadbottom);
+    right: -150px;
+    z-index: 1;
+    transform: rotateZ(var(--rotate));
+}
+
+.breadinner{
+    position: absolute;
+    width: var(--widthbreadinner);
+    height: 100px;
+    border-bottom-right-radius: 45%;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 20%;
+    background-color: rgb(240, 193, 142);
+    bottom: var(--breadbottom);
+    right: -90px;
+    z-index: 1;
+    transform: rotateZ(var(--rotate));
+}
+
+.breadinner2{
+    position: absolute;
+    width: var(--widthbreadinner);
+    height: 100px;
+    border-bottom-right-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 20%;
+    background-color: rgb(240, 193, 142);
+    bottom: var(--breadbottom);
+    right: -150px;
+    z-index: 1;
+    transform: rotateZ(var(--rotate));
+}
+
+
+
+
+.side-dish{
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 380px;
+    height: 280px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+
+.side-dish::before{
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 230px;
+    top: 10px;
+    left: 55px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f6f6f6, #d9d9d9);
+}
+
+.side-dish::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent,  transparent);
+    border-radius: 50%;
 }
 
 .cup{
